@@ -1,8 +1,7 @@
 public class ReplaceZeroWithOne {
     public static void main(String[] args) {
         int num=1036210;
-        int sum=0;
-        int place=1;
+        int sum=0,place=1;
         while(num!=0){
             int last=num%10;
             if(last==0){
