@@ -4,23 +4,23 @@ public class SortHalfAscDesc {
         int mid=arr.length/2;
         for(int i=0;i<mid-1;i++){
             for(int j=i+1;j<mid;j++){
-                if(arr[j]<arr[i]){
-                    int temp=arr[i];
-                    arr[i]=arr[j];
-                    arr[j]=temp;
+                if(arr[i]>arr[j]){
+                    int temp=arr[j];
+                    arr[j]=arr[i];
+                    arr[i]=temp;
                 }
             }
         }
-        for(int i=mid+1;i<arr.length-1;i++){
+        for(int i=mid;i<arr.length-1;i++){
             for(int j=i+1;j<arr.length;j++){
-                if(arr[j]>arr[i]){
-                    int temp=arr[i];
-                    arr[i]=arr[j];
-                    arr[j]=temp;
+                if(arr[i]<arr[j]){
+                    int temp=arr[j];
+                    arr[j]=arr[i];
+                    arr[i]=temp;
                 }
             }
         }
-        for( int x:arr){
+        for(int x:arr){
             System.out.print(x+" ");
         }
     }
