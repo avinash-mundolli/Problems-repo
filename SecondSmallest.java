@@ -8,10 +8,10 @@ public class SecondSmallest {
                 min2=min;
                 min=arr[i];
             }
-            if(arr[i]>min&&arr[i]<min2){
+            if(arr[i]>min&&arr[i]>min2){
                 min2=arr[i];
             }
         }
-        System.out.println(min2);
+        System.out.print(min2);
     }
 }
