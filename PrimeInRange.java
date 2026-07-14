@@ -1,22 +1,24 @@
 public class PrimeInRange {
     public static void main(String[] args) {
-        int start=12,end=100;
-        for(int i=start;i<=end;i++){
-            if(isprime(i)){
-                System.out.println(i);
+        int start = 10, end = 50;
+        for(int i =start;i<=end;i++){
+            if(isPrime(i)){
+                System.out.print(i+" ");
             }
         }
+
     }
-    public static boolean  isprime(int n){
+    public static boolean isPrime(int n){
         if(n<=1){
             return false;
-        }else{
-            for(int i=2;i<=n/2;i++){
+        }
+            for(int i=2;i<=Math.sqrt(n);i++){
                 if(n%i==0){
                     return false;
                 }
-            }
         }
         return true;
+    
     }
+
 }

@@ -1,17 +1,17 @@
 public class PrimeNumber {
     public static void main(String[] args) {
-        int n=2;
+        int n=10;
         boolean isPrime=true;
         if(n<=1){
             isPrime=false;
         }else{
-            for(int i=2;i<=n/2;i++){
+            for(int i=2;i<Math.sqrt(n);i++){
                 if(n%i==0){
                     isPrime=false;
                     break;
                 }
             }
         }
-        System.out.println(isPrime?" is prime":"is not prime");
+        System.out.println(isPrime?" is Prime NUMber":"is not prime number");
     }
 }
